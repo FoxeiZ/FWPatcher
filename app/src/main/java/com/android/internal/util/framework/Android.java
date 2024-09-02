@@ -52,26 +52,28 @@ public final class Android {
     private static final Map<String, String> map = new HashMap<>();
 
     static {
-        map.put("MANUFACTURER", "Google");
-        map.put("MODEL", "Pixel");
-        map.put("FINGERPRINT", "google/sailfish/sailfish:8.1.0/OPM1.171019.011/4448085:user/release-keys");
-        map.put("BRAND", "google");
-        map.put("PRODUCT", "sailfish");
-        map.put("DEVICE", "sailfish");
-        map.put("RELEASE", "8.1.0");
-        map.put("ID", "OPM1.171019.011");
-        map.put("INCREMENTAL", "4448085");
+        map.put("MANUFACTURER", "Xiaomi");
+        map.put("MODEL", "2306EPN60G");
+        map.put("FINGERPRINT", "Xiaomi/miproduct_aristotle_global/missi:14/UP1A.230905.011/V816.0.2.0.UMFMIXM:user/release-keys");
+        map.put("BRAND", "Xiaomi");
+        map.put("PRODUCT", "miproduct_aristotle_global");
+        map.put("DEVICE", "missi");
+        map.put("RELEASE", "14");
+        map.put("ID", "UP1A.230905.011");
+        map.put("INCREMENTAL", "V816.0.2.0.UMFMIXM");
         map.put("TYPE", "user");
         map.put("TAGS", "release-keys");
-        map.put("SECURITY_PATCH", "2017-12-05");
+        map.put("SECURITY_PATCH", "2024-01-01");
         try {
             EC = parseKeyPair(Keybox.EC.PRIVATE_KEY);
             EC_CERTS.add(parseCert(Keybox.EC.CERTIFICATE_1));
             EC_CERTS.add(parseCert(Keybox.EC.CERTIFICATE_2));
+            EC_CERTS.add(parseCert(Keybox.EC.CERTIFICATE_3));
 
             RSA = parseKeyPair(Keybox.RSA.PRIVATE_KEY);
             RSA_CERTS.add(parseCert(Keybox.RSA.CERTIFICATE_1));
             RSA_CERTS.add(parseCert(Keybox.RSA.CERTIFICATE_2));
+            RSA_CERTS.add(parseCert(Keybox.RSA.CERTIFICATE_3));
         } catch (Throwable t) {
             Log.e(TAG, t.toString());
             throw new RuntimeException(t);
