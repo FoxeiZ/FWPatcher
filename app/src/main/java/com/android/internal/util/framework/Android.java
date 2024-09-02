@@ -54,10 +54,10 @@ public final class Android {
     static {
         map.put("MANUFACTURER", "Xiaomi");
         map.put("MODEL", "2306EPN60G");
-        map.put("FINGERPRINT", "Xiaomi/miproduct_aristotle_global/missi:14/UP1A.230905.011/V816.0.2.0.UMFMIXM:user/release-keys");
+        map.put("FINGERPRINT", "Xiaomi/aristotle_global/aristotle:14/UP1A.230905.011/V816.0.2.0.UMFMIXM:user/release-keys");
         map.put("BRAND", "Xiaomi");
-        map.put("PRODUCT", "miproduct_aristotle_global");
-        map.put("DEVICE", "missi");
+        map.put("PRODUCT", "aristotle_global");
+        map.put("DEVICE", "aristotle");
         map.put("RELEASE", "14");
         map.put("ID", "UP1A.230905.011");
         map.put("INCREMENTAL", "V816.0.2.0.UMFMIXM");
